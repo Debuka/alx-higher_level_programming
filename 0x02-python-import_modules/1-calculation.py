@@ -1,13 +1,15 @@
 #!/usr/bin/python3
-"""tthis programs imports function and those some maths,
-then prints the result"""
-if __name__ == "__main__":
-    from calculator_1 import add, div, sub, mul
+from calculator_1 import add, sub, div, mul
 
+if __name__ == "__main__":
     a = 10
     b = 5
-    print("{} + {} = {}".format(a, b, div(a, b)))
-    print("{} + {} = {}".format(a, b, add(a, b)))
-    print("{} + {} = {}".format(a, b, sub(a, b)))
-    print("{} + {} = {}".format(a, b, mul(a, b)))
+    outcome_of_add = add(a, b)
+    outcome_of_sub = sub(a, b)
+    outcome_of_div = div(a, b)
+    outcome_of_mul = mul(a, b)
 
+    print("{:d} + {:d} = {:d}".format(a, b, outcome_of_add))
+    print("{:d} - {:d} = {:d}".format(a, b, outcome_of_sub))
+    print("{:d} / {:d} = {:d}".format(a, b, outcome_of_div))
+    print("{:d} * {:d} = {:d}".format(a, b, outcome_of_mul))
