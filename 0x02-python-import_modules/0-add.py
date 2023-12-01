@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#imports add function simple maths
 from add_0 import add
 
 if __name__ == "__main__":
